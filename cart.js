@@ -1,24 +1,34 @@
-const searchValue = document.getElementById('searchValue')
-const searchReturns = document.querySelector('#searchReturns')
+// Fire base imports 
+import { log } from 'console';
+import { initiaizeApp } from 'firebase/app';
+import { getFireStore } from 'firebase/firestore';
+
+import { collection, addDoc} from 'firebase/firestore'
 
 
-const delete_productbtn = document.querySelector('#delete-product')
-
-function delete_item(){
-    delete_productbtn.parentElement.remove();
+// fire base configuration is done here
+const firebaseConfig = {
+  apiKey: import.meta.FIREBASE_API_KEY,
+  authDomain: "nadis-ecommerce-site.firebaseapp.com",
+  projectId: "nadis-ecommerce-site",
+  storageBucket: "nadis-ecommerce-site.firebasestorage.app",
+  messagingSenderId: "764774332008",
+  appId: import.meta.FIREBASE_API_ID,
+  measurementId: "G-WXDQWQHFR1"
 }
 
-const items = ['Headphones', 'Speaker', 'Earpiece', 'Mouse', 'Keyboard', 'Laptop', 'Power Bank', 'Phone Charger', 'Toner Cartridge', 'Flash Drive']
+
+// initialization
+const app = initiaizeApp(firebaseConfig)
 
 
-
-function filterProduct(){
-    
-    const filterResult = []
-    items.filter((item)=>{
-    const checkProduct = item.includes(searchValue)
-    filterResult.push(checkProduct)
-    searchReturns.innerHTML = filterResult
-})
-
+try{
+    const docref = await addDoc(collection(db, "users"), {
+        first: 'Ada',
+        last: 'Lovelace',
+        born: 1817
+    });
+    console.log(`Document written with ID : ${docref.id}`)
+} catch(err){
+    console.log('There was an error', err)   
 }
