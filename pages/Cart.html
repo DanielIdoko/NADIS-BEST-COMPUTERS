@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cart</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+#cart-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+}
+
+.cart-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.item-details {
+  flex: 1;
+  margin-left: 15px;
+}
+
+button.remove-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+  </style>
+</head>
+<body>
+
+  <h1>Your Cart</h1>
+
+  <div id="cart-container">
+    <!-- JS will populate items here -->
+  </div>
+
+  
+</body>
+</html>

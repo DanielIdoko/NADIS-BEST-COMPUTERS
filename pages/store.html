@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/store.css">
+
+    <!-- javascript sources -->
+    <script src="../js/Script.js" defer></script>
+    <script src="../js/cart.js" defer></script>    
+    <script  src="../js/Search.js" defer></script>    
+</head>
+<body>
+    <!-- <div id="header"></div> -->
+    <!-- <div id="sidebar"></div> -->
+
+    <header class="header">
+
+        <div class="left-section">
+            <div id="navbar-logo">
+            <img src="../all/all2.png" class="header-logo" alt="NadisBestComputers Logo">
+            </div>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products or brands" id="searchInput">
+                <button id="searchBtn"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    
+
+
+        <div class="right-section">
+            <a href="Cart.html">
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                <div class="cart-count">8</div>
+                </div>
+            </a>
+        
+        </div>
+    
+    </header>
+            
+    
+
+    <!--Store hero section -->
+    <section class="store-hero">
+    <div class="glass-box">
+        <h1>Discover Quality. Shop Smart.</h1>
+        <p>Elevate your everyday with tech essentials and accessories made to last.</p>
+    </div>
+    </section>
+    
+    <!-- main -->
+    <main>
+        <section class="products">
+            <h2>Products</h2>
+            <div class="product-grid" id="product-grid">
+           <p id="empty-products" class=""></p>
+        </section>
+<!-- 
+        <section class="cart-container">
+            <h3>Your Cart</h3>
+            <p id="empty-cart-message">Your cart is currently empty</p>
+            <p>Total: <span id="cart-total">2000</span></p>
+        </section>
+         -->
+    </main>
+
+
+
+
+
+    
+    <footer>
+        <p>&copy; 2023 E-commerce Store</p>
+    </footer>
+
+    <!-- <div id="footer"></div> -->
+</body>
+</html>
